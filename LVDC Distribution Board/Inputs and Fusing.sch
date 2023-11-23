@@ -1,0 +1,635 @@
+EESchema Schematic File Version 4
+LIBS:LVDC Distribution-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7680 6960 0    197  Italic 39
+Inputs and Fusing
+$Comp
+L Device:Q_NMOS_GDS Q202
+U 1 1 5C01F186
+P 7520 4170
+F 0 "Q202" V 7760 4420 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 7760 4050 50  0000 C CNN
+F 2 "" H 7720 4270 50  0001 C CNN
+F 3 "DMTH6004SK3-13DICT-ND" H 7520 4170 50  0001 C CNN
+	1    7520 4170
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_US R211
+U 1 1 5C02112F
+P 7910 3530
+F 0 "R211" H 7978 3576 50  0000 L CNN
+F 1 "700k" H 7978 3485 50  0000 L CNN
+F 2 "" V 7950 3520 50  0001 C CNN
+F 3 "~" H 7910 3530 50  0001 C CNN
+	1    7910 3530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7910 4270 7910 4160
+Wire Wire Line
+	7720 4270 7910 4270
+Connection ~ 7910 4270
+$Comp
+L power:GND #PWR0101
+U 1 1 5C021752
+P 8710 4390
+F 0 "#PWR0101" H 8710 4140 50  0001 C CNN
+F 1 "GND" H 8715 4217 50  0000 C CNN
+F 2 "" H 8710 4390 50  0001 C CNN
+F 3 "" H 8710 4390 50  0001 C CNN
+	1    8710 4390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7910 3770 7910 3680
+$Comp
+L Device:Q_NMOS_GDS Q201
+U 1 1 5C02823A
+P 6600 4170
+F 0 "Q201" V 6820 3930 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 6830 4480 50  0000 C CNN
+F 2 "" H 6800 4270 50  0001 C CNN
+F 3 "DMTH6004SK3-13DICT-ND" H 6600 4170 50  0001 C CNN
+	1    6600 4170
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6800 4270 6970 4270
+$Comp
+L Device:R_US R209
+U 1 1 5C029257
+P 6970 3530
+F 0 "R209" H 7038 3576 50  0000 L CNN
+F 1 "700k" H 7038 3485 50  0000 L CNN
+F 2 "" V 7010 3520 50  0001 C CNN
+F 3 "~" H 6970 3530 50  0001 C CNN
+	1    6970 3530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R210
+U 1 1 5C0292B3
+P 6970 3980
+F 0 "R210" H 6902 3934 50  0000 R CNN
+F 1 "500k" H 6902 4025 50  0000 R CNN
+F 2 "" V 7010 3970 50  0001 C CNN
+F 3 "~" H 6970 3980 50  0001 C CNN
+	1    6970 3980
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6970 3830 6970 3760
+Wire Wire Line
+	6970 3760 6600 3760
+Wire Wire Line
+	6600 3760 6600 3970
+Connection ~ 6970 3760
+Wire Wire Line
+	6970 3760 6970 3680
+Wire Wire Line
+	7520 3770 7910 3770
+Wire Wire Line
+	7520 3770 7520 3970
+Connection ~ 6970 3240
+Wire Wire Line
+	6970 3240 8440 3240
+Wire Wire Line
+	7910 4270 8710 4270
+Wire Wire Line
+	8710 4270 8710 4390
+Wire Wire Line
+	6970 3380 6970 3240
+Wire Wire Line
+	6970 4130 6970 4270
+$Comp
+L Device:R_US R212
+U 1 1 5C0211AB
+P 7910 4010
+F 0 "R212" H 7842 3964 50  0000 R CNN
+F 1 "500k" H 7842 4055 50  0000 R CNN
+F 2 "" V 7950 4000 50  0001 C CNN
+F 3 "~" H 7910 4010 50  0001 C CNN
+	1    7910 4010
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7910 3860 7910 3770
+Connection ~ 7910 3770
+Wire Wire Line
+	7910 3380 7910 2420
+Connection ~ 7910 2420
+Wire Wire Line
+	7910 2420 8430 2420
+Text Notes 8810 4440 0    47   Italic 9
+POD_GND
+$Comp
+L Device:LED D201
+U 1 1 5C033289
+P 5170 3920
+F 0 "D201" V 5208 3803 50  0000 R CNN
+F 1 "BLUE" V 5117 3803 50  0000 R CNN
+F 2 "" H 5170 3920 50  0001 C CNN
+F 3 "~" H 5170 3920 50  0001 C CNN
+	1    5170 3920
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D202
+U 1 1 5C033A1A
+P 5540 3920
+F 0 "D202" V 5578 3803 50  0000 R CNN
+F 1 "BLUE" V 5487 3803 50  0000 R CNN
+F 2 "" H 5540 3920 50  0001 C CNN
+F 3 "~" H 5540 3920 50  0001 C CNN
+	1    5540 3920
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R208
+U 1 1 5C033BD3
+P 5540 3550
+F 0 "R208" H 5470 3520 50  0000 R CNN
+F 1 "2k" H 5472 3595 50  0000 R CNN
+F 2 "" V 5580 3540 50  0001 C CNN
+F 3 "~" H 5540 3550 50  0001 C CNN
+	1    5540 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5170 3770 5170 3700
+Wire Wire Line
+	5540 3770 5540 3700
+$Comp
+L Connector:Screw_Terminal_01x01 J204
+U 1 1 5C036982
+P 2060 1940
+F 0 "J204" H 1980 1715 50  0000 C CNN
+F 1 "BAT_LP_IN+" H 1980 1806 50  0000 C CNN
+F 2 "" H 2060 1940 50  0001 C CNN
+F 3 "~" H 2060 1940 50  0001 C CNN
+	1    2060 1940
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J202
+U 1 1 5C036A9C
+P 2040 3310
+F 0 "J202" H 1960 3085 50  0000 C CNN
+F 1 "BAT_HP_IN+" H 1960 3176 50  0000 C CNN
+F 2 "" H 2040 3310 50  0001 C CNN
+F 3 "~" H 2040 3310 50  0001 C CNN
+	1    2040 3310
+	-1   0    0    1   
+$EndComp
+Text GLabel 3640 1500 2    47   Output Italic 0
+LPBAT_Voltage
+Text GLabel 3580 2920 2    47   Output Italic 0
+HPBAT_Voltage
+$Comp
+L Connector:Screw_Terminal_01x01 J201
+U 1 1 5C03B9DA
+P 2030 4270
+F 0 "J201" H 1950 4045 50  0000 C CNN
+F 1 "BAT_LP_IN-" H 1950 4136 50  0000 C CNN
+F 2 "" H 2030 4270 50  0001 C CNN
+F 3 "~" H 2030 4270 50  0001 C CNN
+	1    2030 4270
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J203
+U 1 1 5C03BA42
+P 2040 4810
+F 0 "J203" H 1960 4585 50  0000 C CNN
+F 1 "BAT_HP_IN-" H 1960 4676 50  0000 C CNN
+F 2 "" H 2040 4810 50  0001 C CNN
+F 3 "~" H 2040 4810 50  0001 C CNN
+	1    2040 4810
+	-1   0    0    1   
+$EndComp
+Text Notes 1920 1460 0    47   Italic 9
+BATTERY INPUTS
+Text Notes 6510 3080 0    47   Italic 9
+BATTERY PROTECTION
+Text Notes 7200 4670 0    20   Italic 4
+Rerverse Voltage Polarity Protection \nIf any battery is installed backwards,\nno current will flow, protecting downstream circuitry
+Text Notes 1960 2640 0    50   ~ 0
+Lug Terminals
+Wire Wire Line
+	5540 4070 5540 4270
+Wire Wire Line
+	5170 4070 5170 4270
+Text Notes 1860 5380 0    50   ~ 0
+Temp Sensor Inputs?
+$Comp
+L LVDC-Library:ACS711 U201
+U 1 1 5C3C05F3
+P 3960 2190
+F 0 "U201" H 3960 2705 50  0000 C CNN
+F 1 "ACS711" H 3960 2614 50  0000 C CNN
+F 2 "" H 3860 2190 50  0001 C CNN
+F 3 "620-1482-1-ND" H 3860 2190 50  0001 C CNN
+	1    3960 2190
+	1    0    0    -1  
+$EndComp
+$Comp
+L LVDC-Library:ACS711 U202
+U 1 1 5C3C0845
+P 3970 3560
+F 0 "U202" H 3970 4075 50  0000 C CNN
+F 1 "ACS711" H 3970 3984 50  0000 C CNN
+F 2 "" H 3870 3560 50  0001 C CNN
+F 3 "620-1482-1-ND" H 3870 3560 50  0001 C CNN
+	1    3970 3560
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5170 2420 5170 3400
+Wire Wire Line
+	5170 2420 5170 1940
+Wire Wire Line
+	5170 1940 4530 1940
+Connection ~ 5170 2420
+Wire Wire Line
+	4410 2040 4530 2040
+Wire Wire Line
+	4530 2040 4530 1940
+Connection ~ 4530 1940
+Wire Wire Line
+	4530 1940 4410 1940
+Wire Wire Line
+	4580 3240 4580 3310
+Wire Wire Line
+	4580 3310 4420 3310
+Connection ~ 5540 3240
+Wire Wire Line
+	5540 3240 5540 3400
+Wire Wire Line
+	4580 3410 4580 3310
+Connection ~ 4580 3310
+Wire Wire Line
+	3510 2040 3390 2040
+Wire Wire Line
+	3390 2040 3390 1940
+Connection ~ 3390 1940
+Wire Wire Line
+	3390 1940 3510 1940
+Wire Wire Line
+	3390 1940 3390 1500
+Wire Wire Line
+	3390 1500 3640 1500
+Wire Wire Line
+	3510 2540 3410 2540
+Wire Wire Line
+	3410 2540 3410 2640
+$Comp
+L power:GND #PWR0102
+U 1 1 5C3D0C95
+P 3410 2640
+F 0 "#PWR0102" H 3410 2390 50  0001 C CNN
+F 1 "GND" H 3415 2467 50  0000 C CNN
+F 2 "" H 3410 2640 50  0001 C CNN
+F 3 "" H 3410 2640 50  0001 C CNN
+	1    3410 2640
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C3D0DE0
+P 3390 4010
+F 0 "#PWR0103" H 3390 3760 50  0001 C CNN
+F 1 "GND" H 3395 3837 50  0000 C CNN
+F 2 "" H 3390 4010 50  0001 C CNN
+F 3 "" H 3390 4010 50  0001 C CNN
+	1    3390 4010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3390 4010 3390 3910
+Wire Wire Line
+	3390 3910 3520 3910
+Wire Wire Line
+	3520 3410 3410 3410
+Wire Wire Line
+	3410 3410 3410 3310
+Wire Wire Line
+	3410 3310 3520 3310
+Connection ~ 3410 3310
+Wire Wire Line
+	3520 3610 3320 3610
+Wire Wire Line
+	3320 3610 3320 3550
+Wire Wire Line
+	3310 3810 3310 3870
+Wire Wire Line
+	3310 3870 3240 3870
+Wire Wire Line
+	3310 3810 3520 3810
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C3E7E41
+P 3240 3480
+AR Path="/5BFB302C/5C3E7E41" Ref="#PWR?"  Part="1" 
+AR Path="/5BFB3004/5C3E7E41" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 3240 3330 50  0001 C CNN
+F 1 "+3V3" H 3090 3560 50  0000 C CNN
+F 2 "" H 3240 3480 50  0001 C CNN
+F 3 "" H 3240 3480 50  0001 C CNN
+	1    3240 3480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3510 2240 3310 2240
+Wire Wire Line
+	3310 2240 3310 2180
+$Comp
+L Device:R_US 1k?
+U 1 1 5C3EC704
+P 3230 2350
+AR Path="/5BFB302C/5C3EC704" Ref="1k?"  Part="1" 
+AR Path="/5BFB3004/5C3EC704" Ref="R201"  Part="1" 
+F 0 "R201" H 3380 2290 50  0000 R CNN
+F 1 "1k" H 3380 2390 50  0000 R CNN
+F 2 "" V 3270 2340 50  0001 C CNN
+F 3 "~" H 3230 2350 50  0001 C CNN
+	1    3230 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3310 2180 3230 2180
+Wire Wire Line
+	3230 2180 3230 2200
+Wire Wire Line
+	3300 2440 3300 2500
+Wire Wire Line
+	3300 2500 3230 2500
+Wire Wire Line
+	3300 2440 3510 2440
+Wire Wire Line
+	3230 2180 3230 2110
+Connection ~ 3230 2180
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C3EC712
+P 3230 2110
+AR Path="/5BFB302C/5C3EC712" Ref="#PWR?"  Part="1" 
+AR Path="/5BFB3004/5C3EC712" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3230 1960 50  0001 C CNN
+F 1 "+3V3" H 3080 2190 50  0000 C CNN
+F 2 "" H 3230 2110 50  0001 C CNN
+F 3 "" H 3230 2110 50  0001 C CNN
+	1    3230 2110
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3510 2340
+NoConn ~ 3520 3710
+Text Notes 4160 1780 0    50   ~ 0
++-15A Capable
+Wire Wire Line
+	4410 2240 4500 2240
+Wire Wire Line
+	4420 3610 4470 3610
+Wire Wire Line
+	4420 3410 4580 3410
+Text GLabel 4500 2240 2    50   Output ~ 0
+LPBatt_Current
+Text GLabel 4470 3610 2    50   Output ~ 0
+HPBatt_Current
+Wire Wire Line
+	3410 3310 3410 2920
+Wire Wire Line
+	3410 2920 3580 2920
+Wire Wire Line
+	5540 4270 6400 4270
+Text Notes 4140 3160 0    50   ~ 0
++-15A Capable
+$Comp
+L Device:Fuse F201
+U 1 1 5C439696
+P 2570 1940
+F 0 "F201" V 2373 1940 50  0000 C CNN
+F 1 "Fuse" V 2464 1940 50  0000 C CNN
+F 2 "" V 2500 1940 50  0001 C CNN
+F 3 "~" H 2570 1940 50  0001 C CNN
+	1    2570 1940
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5170 2420 7910 2420
+Wire Wire Line
+	5540 3240 6970 3240
+Wire Wire Line
+	4580 3240 5540 3240
+Wire Wire Line
+	2720 1940 3390 1940
+Wire Wire Line
+	2420 1940 2260 1940
+$Comp
+L Device:Fuse F202
+U 1 1 5C44409B
+P 2570 3310
+F 0 "F202" V 2373 3310 50  0000 C CNN
+F 1 "Fuse" V 2464 3310 50  0000 C CNN
+F 2 "" V 2500 3310 50  0001 C CNN
+F 3 "~" H 2570 3310 50  0001 C CNN
+	1    2570 3310
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2720 3310 3410 3310
+Wire Wire Line
+	2420 3310 2240 3310
+Text HLabel 8430 2420 2    50   Output ~ 0
+LP_Vin+
+Text HLabel 8440 3240 2    50   Output ~ 0
+HP_Vin+
+$Comp
+L Device:R_US R207
+U 1 1 5C4654A3
+P 5170 3550
+F 0 "R207" H 5100 3520 50  0000 R CNN
+F 1 "2k" H 5102 3595 50  0000 R CNN
+F 2 "" V 5210 3540 50  0001 C CNN
+F 3 "~" H 5170 3550 50  0001 C CNN
+	1    5170 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C4657B5
+P 3240 3720
+AR Path="/5BFB302C/5C4657B5" Ref="R?"  Part="1" 
+AR Path="/5BFB3004/5C4657B5" Ref="R202"  Part="1" 
+F 0 "R202" H 3390 3660 50  0000 R CNN
+F 1 "1k" H 3390 3760 50  0000 R CNN
+F 2 "" V 3280 3710 50  0001 C CNN
+F 3 "~" H 3240 3720 50  0001 C CNN
+	1    3240 3720
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3240 3480 3240 3550
+Wire Wire Line
+	3320 3550 3240 3550
+Connection ~ 3240 3550
+Wire Wire Line
+	3240 3550 3240 3570
+Text HLabel 8430 1820 2    50   Input ~ 0
+LP3V3
+Wire Wire Line
+	8430 1820 8150 1820
+Wire Wire Line
+	8150 1820 8150 1710
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C56875B
+P 8150 1710
+AR Path="/5BFB302C/5C56875B" Ref="#PWR?"  Part="1" 
+AR Path="/5BFB3004/5C56875B" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 8150 1560 50  0001 C CNN
+F 1 "+3V3" H 8000 1790 50  0000 C CNN
+F 2 "" H 8150 1710 50  0001 C CNN
+F 3 "" H 8150 1710 50  0001 C CNN
+	1    8150 1710
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R203
+U 1 1 5C56D49A
+P 3700 5380
+F 0 "R203" H 3768 5426 50  0000 L CNN
+F 1 "900k" H 3768 5335 50  0000 L CNN
+F 2 "" V 3740 5370 50  0001 C CNN
+F 3 "~" H 3700 5380 50  0001 C CNN
+	1    3700 5380
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R204
+U 1 1 5C56D525
+P 3700 5760
+F 0 "R204" H 3768 5806 50  0000 L CNN
+F 1 "100k" H 3768 5715 50  0000 L CNN
+F 2 "" V 3740 5750 50  0001 C CNN
+F 3 "~" H 3700 5760 50  0001 C CNN
+	1    3700 5760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5610 3700 5560
+Wire Wire Line
+	3700 5560 3960 5560
+Connection ~ 3700 5560
+Wire Wire Line
+	3700 5560 3700 5530
+Wire Wire Line
+	3700 5910 3700 6000
+$Comp
+L power:GND #PWR0108
+U 1 1 5C5747C0
+P 3700 6000
+F 0 "#PWR0108" H 3700 5750 50  0001 C CNN
+F 1 "GND" H 3705 5827 50  0000 C CNN
+F 2 "" H 3700 6000 50  0001 C CNN
+F 3 "" H 3700 6000 50  0001 C CNN
+	1    3700 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5230 3700 5170
+Wire Wire Line
+	3700 5170 3640 5170
+Text GLabel 3640 5170 0    47   Input Italic 0
+LPBAT_Voltage
+Text GLabel 3960 5560 2    47   Output Italic 0
+LPBAT_VSense
+$Comp
+L Device:R_US R205
+U 1 1 5C579D47
+P 5150 5390
+F 0 "R205" H 5218 5436 50  0000 L CNN
+F 1 "900k" H 5218 5345 50  0000 L CNN
+F 2 "" V 5190 5380 50  0001 C CNN
+F 3 "~" H 5150 5390 50  0001 C CNN
+	1    5150 5390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R206
+U 1 1 5C579D4D
+P 5150 5770
+F 0 "R206" H 5218 5816 50  0000 L CNN
+F 1 "100k" H 5218 5725 50  0000 L CNN
+F 2 "" V 5190 5760 50  0001 C CNN
+F 3 "~" H 5150 5770 50  0001 C CNN
+	1    5150 5770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5620 5150 5570
+Wire Wire Line
+	5150 5570 5410 5570
+Connection ~ 5150 5570
+Wire Wire Line
+	5150 5570 5150 5540
+Wire Wire Line
+	5150 5920 5150 6010
+$Comp
+L power:GND #PWR0109
+U 1 1 5C579D58
+P 5150 6010
+F 0 "#PWR0109" H 5150 5760 50  0001 C CNN
+F 1 "GND" H 5155 5837 50  0000 C CNN
+F 2 "" H 5150 6010 50  0001 C CNN
+F 3 "" H 5150 6010 50  0001 C CNN
+	1    5150 6010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5240 5150 5180
+Wire Wire Line
+	5150 5180 5090 5180
+Text GLabel 5090 5180 0    47   Input Italic 0
+HPBAT_Voltage
+Text GLabel 5410 5570 2    47   Output Italic 0
+HPBAT_VSense
+Text Notes 3500 5010 0    50   ~ 0
+Battery Voltage Sense (30V --> 3V)
+Wire Wire Line
+	6970 4270 6970 4500
+Wire Wire Line
+	6970 4500 7910 4500
+Wire Wire Line
+	7910 4500 7910 4280
+Connection ~ 6970 4270
+Wire Wire Line
+	2230 4270 5170 4270
+Wire Wire Line
+	5540 4270 5540 4810
+Wire Wire Line
+	2240 4810 5540 4810
+Connection ~ 5540 4270
+Wire Wire Line
+	7320 4270 7140 4270
+Wire Wire Line
+	7140 4270 7140 4450
+Wire Wire Line
+	7140 4450 5170 4450
+Wire Wire Line
+	5170 4450 5170 4270
+Connection ~ 5170 4270
+$EndSCHEMATC
